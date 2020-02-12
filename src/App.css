@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.main
+{
+  display : flex;
+  margin: auto;
+  flex-direction : column;
+  align-items : center;
+  flex-wrap: wrap;
+}
+
+
+.toolsPanel{
+  margin-top : 20px;
+}
+
+.toolsPanel > button{
+  width : 60px;
+  height : 60px;
+}
+
+#grid {
+  padding: 1px;
+  display : grid;
+  grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+  grid-gap: -1px;
+  margin-top: 25vh;
+  height : 50vh;
+  width : 50vh;
+  border: 1px solid black;
+  background: white;
+}
+
+#grid > div{
+  cursor : crosshair;
+  border : 1px solid black;
+  background: white;
+}
+
+#grid > div:Hover{
+  background: darkgray;
+  transition: 0.25s linear;
+}
+
