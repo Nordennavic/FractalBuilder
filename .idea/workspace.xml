@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29132f70-5061-4927-9c88-91e3a61c6989" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Builder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Builder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Canvas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +94,7 @@
       <workItem from="1581445726555" duration="4448000" />
       <workItem from="1581487058227" duration="5546000" />
       <workItem from="1581529701113" duration="2689000" />
-      <workItem from="1581600234610" duration="8454000" />
+      <workItem from="1581600234610" duration="13740000" />
     </task>
     <task id="LOCAL-00001" summary="Half-Added canvas.">
       <created>1581496389359</created>
@@ -107,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581496389359</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="*Full-Added canvas.&#10;*Bug with pseudo-class :hover.">
+      <created>1581617519908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581617519909</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,13 +118,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Half-Added canvas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Half-Added canvas." />
+    <MESSAGE value="*Full-Added canvas.&#10;*Bug with pseudo-class :hover." />
+    <option name="LAST_COMMIT_MESSAGE" value="*Full-Added canvas.&#10;*Bug with pseudo-class :hover." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1319" y="414" key="CommitChangelistDialog2" timestamp="1581617457579">
+    <state x="1427" y="333" key="CommitChangelistDialog2" timestamp="1581626088284">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1319" y="414" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1581617457579" />
+    <state x="1427" y="333" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1581626088284" />
     <state width="2561" height="386" key="GridCell.Tab.0.bottom" timestamp="1581617457684">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -190,10 +194,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="871" y="387" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1581607778177" />
-    <state x="873" y="431" key="Vcs.Push.Dialog.v2" timestamp="1581496399858">
+    <state x="873" y="431" key="Vcs.Push.Dialog.v2" timestamp="1581617535322">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="431" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1581496399858" />
+    <state x="873" y="431" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1581617535322" />
     <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1581607633412">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

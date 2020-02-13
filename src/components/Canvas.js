@@ -1,10 +1,13 @@
 import React from "react";
 import $ from 'jquery';
-
 class Canvas extends React.Component {
         constructor(props) {
             super(props);
-            this.state={painting : true};
+
+            this.state={
+                painting : true,
+                strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            };
             this.toPainting= this.toPainting.bind(this);
             this.toErasing = this.toErasing.bind(this);
             this.cleaning = this.cleaning.bind(this);
@@ -23,16 +26,26 @@ class Canvas extends React.Component {
 
              cleaning(){
                  $("#grid").children().css("background", "white");
+                 this.setState({strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]})
             }
 
         brushStroke(event){
-        this.state.painting ? event.target.style.background = 'black' : event.target.style.background = 'white';
+            let cell = event.target;
+            if(this.state.painting){
+                cell.style.background = 'black';
+                this.setState(state => {state.strokeCells[cell.id.toString()] = 1; return state.strokeCells});
+            } else {
+                cell.style.background = 'white';
+                this.setState(state => {state.strokeCells[cell.id.toString()] = 0; return state.strokeCells});
+            }
+
+        console.log(this.state.strokeCells)
         }
 
     render() {
         let cells = [];                               // Dynamic adding "cells of canvas"
         for(let i = 0; i < 49; i++) {
-            cells.push(<div key={i.toString()} onClick={this.brushStroke} />);
+            cells.push(<div id={i.toString()} key={i.toString()} onClick={this.brushStroke} />);
         }
         return (
             <div>
