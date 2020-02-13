@@ -59,7 +59,7 @@
 #grid {
   padding: 1px;
   display : grid;
-  grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+  grid-template: repeat(7, 1fr) / repeat(7, 1fr);
   grid-gap: -1px;
   margin-top: 25vh;
   height : 50vh;
@@ -75,7 +75,7 @@
 }
 
 #grid > div:Hover{
-  background: darkgray;
+  background-color: darkgray;
   transition: 0.25s linear;
 }
 
