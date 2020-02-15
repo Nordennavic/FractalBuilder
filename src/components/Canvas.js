@@ -1,12 +1,15 @@
 import React from "react";
 import $ from 'jquery';
+import Builder from "./Builder";
+
 class Canvas extends React.Component {
         constructor(props) {
             super(props);
 
             this.state={
                 painting : true,
-                strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                strokeCells : [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                endPaint : false
             };
             this.toPainting= this.toPainting.bind(this);
             this.toErasing = this.toErasing.bind(this);
@@ -26,7 +29,7 @@ class Canvas extends React.Component {
 
              cleaning(){
                  $("#grid").children().css("background", "white");
-                 this.setState({strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]})
+                 this.setState({strokeCells : [1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]})
             }
 
         brushStroke(event){
@@ -56,9 +59,14 @@ class Canvas extends React.Component {
                     <button type='button' id='brush' onClick={this.toPainting} disabled={this.state.painting}>Brush</button>
                     <button type='button' id='eraser' onClick={this.toErasing} disabled={!this.state.painting}>Eraser</button>
                     <button type='button' id='clean' onClick={this.cleaning}>Clean</button>
+                    <button type='button' id='drawFractal'>draw</button>
                 </div>
+                <Builder name={this.state.strokeCells}/>
             </div>)
                 }
 }
 
+
 export default Canvas;
+
+//{this.state.endPaint ? <Builder children={this.props}/> : ''};
