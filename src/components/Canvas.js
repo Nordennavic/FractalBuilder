@@ -8,7 +8,7 @@ class Canvas extends React.Component {
 
             this.state={
                 painting : true,
-                strokeCells : [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                 endPaint : false
             };
             this.toPainting= this.toPainting.bind(this);
@@ -29,7 +29,7 @@ class Canvas extends React.Component {
 
              cleaning(){
                  $("#grid").children().css("background", "white");
-                 this.setState({strokeCells : [1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]})
+                 this.setState({strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]})
             }
 
         brushStroke(event){
@@ -41,15 +41,18 @@ class Canvas extends React.Component {
                 cell.style.background = 'white';
                 this.setState(state => {state.strokeCells[cell.id.toString()] = 0; return state.strokeCells});
             }
-
         console.log(this.state.strokeCells)
         }
+
+
+
 
     render() {
         let cells = [];                               // Dynamic adding "cells of canvas"
         for(let i = 0; i < 49; i++) {
             cells.push(<div id={i.toString()} key={i.toString()} onClick={this.brushStroke} />);
         }
+
         return (
             <div>
                 <div id='grid'>
@@ -59,9 +62,9 @@ class Canvas extends React.Component {
                     <button type='button' id='brush' onClick={this.toPainting} disabled={this.state.painting}>Brush</button>
                     <button type='button' id='eraser' onClick={this.toErasing} disabled={!this.state.painting}>Eraser</button>
                     <button type='button' id='clean' onClick={this.cleaning}>Clean</button>
-                    <button type='button' id='drawFractal'>draw</button>
+                    <button type='button' id='drawFractal' onClick={() => {this.setState({endPaint : false})}}>draw</button>
                 </div>
-                <Builder name={this.state.strokeCells}/>
+                <Builder  figure={this.state.strokeCells} endPaint={this.state.endPaint}/>
             </div>)
                 }
 }

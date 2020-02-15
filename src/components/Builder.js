@@ -7,25 +7,25 @@ let primaryFigure = [];
 class Builder extends React.Component {
     constructor(props) {
         super(props);
-        primaryFigure = props;
         this.state = {
             paint : false
         };
-        this.fragmentBuild([300, 300], this.props)
+        if(props.endPaint)
+        this.fragmentBuild([300, 300], props.figure)
     }
 
     fragmentBuild(startPoint, figureCoord) {
-        for(let i = 1; i < 8; i++)
+        for(let i = 0; i < 7; i++)
         {
-            for(let j = 1; j < 8; j++) {
-                if (figureCoord[j * i] === 1)
+            for(let j = 0; j < 7; j++) {
+                if (figureCoord[j + (7*i)] === 1)
                     this.drawPoint(startPoint);
-                startPoint[1]++;
-                if(i === 7 && j === 7)
+                startPoint[0]++;
+                if(i === 6 && j === 6)
                     lastPoint = startPoint;
             }
-            startPoint[0]++;
-            startPoint[1] -= 7;
+            startPoint[1]++;
+            startPoint[0] -= 7;
         }
     }
 
@@ -41,7 +41,7 @@ class Builder extends React.Component {
     render() {
         return(
             <div>
-            <button type="button" onClick={this.fragmentBuild([300, 300], primaryFigure)} />
+            <button type="button" onClick={this.fragmentBuild([300, 300], this.props.figure)} />
             <svg width="600px" height="600px">
                 {fragment}
             </svg>

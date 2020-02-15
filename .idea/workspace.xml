@@ -96,7 +96,7 @@
       <workItem from="1581529701113" duration="2689000" />
       <workItem from="1581600234610" duration="14495000" />
       <workItem from="1581664099474" duration="12095000" />
-      <workItem from="1581766665005" duration="1198000" />
+      <workItem from="1581766665005" duration="5874000" />
     </task>
     <task id="LOCAL-00001" summary="Half-Added canvas.">
       <created>1581496389359</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581626093488</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Half-added fractal drawing">
+      <created>1581788946531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581788946531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,29 +136,30 @@
     <MESSAGE value="Half-Added canvas." />
     <MESSAGE value="*Full-Added canvas.&#10;*Bug with pseudo-class :hover." />
     <MESSAGE value="- Added drawing transfer" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added drawing transfer" />
+    <MESSAGE value="Half-added fractal drawing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Half-added fractal drawing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1427" y="333" key="CommitChangelistDialog2" timestamp="1581626092913">
+    <state x="1427" y="333" key="CommitChangelistDialog2" timestamp="1581788944613">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1427" y="333" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1581626092913" />
-    <state width="2561" height="386" key="GridCell.Tab.0.bottom" timestamp="1581715563672">
+    <state x="1427" y="333" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1581788944613" />
+    <state width="1481" height="144" key="GridCell.Tab.0.bottom" timestamp="1581792759909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="386" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1581715563672" />
-    <state width="2561" height="386" key="GridCell.Tab.0.center" timestamp="1581715563671">
+    <state width="1481" height="144" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1581792759909" />
+    <state width="1481" height="144" key="GridCell.Tab.0.center" timestamp="1581792759909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="386" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1581715563671" />
-    <state width="2561" height="386" key="GridCell.Tab.0.left" timestamp="1581715563671">
+    <state width="1481" height="144" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1581792759909" />
+    <state width="1481" height="144" key="GridCell.Tab.0.left" timestamp="1581792759908">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="386" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1581715563671" />
-    <state width="2561" height="386" key="GridCell.Tab.0.right" timestamp="1581715563671">
+    <state width="1481" height="144" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1581792759908" />
+    <state width="1481" height="144" key="GridCell.Tab.0.right" timestamp="1581792759909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="386" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1581715563671" />
+    <state width="1481" height="144" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1581792759909" />
     <state width="2561" height="479" key="GridCell.Tab.1.bottom" timestamp="1581538883387">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
