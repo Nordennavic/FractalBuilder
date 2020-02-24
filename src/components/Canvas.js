@@ -9,7 +9,8 @@ class Canvas extends React.Component {
             this.state={
                 painting : true,
                 strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-                endPaint : false
+                endPaint : false,
+                clean : false
             };
             this.toPainting= this.toPainting.bind(this);
             this.toErasing = this.toErasing.bind(this);
@@ -19,17 +20,19 @@ class Canvas extends React.Component {
 
             toPainting() {
             if(this.state.painting !== true)
-                this.setState({painting : true});
+                this.setState({painting : true, clean : false});
         }
             toErasing() {
                 if (this.state.painting === true) {
-                    this.setState({painting: false});
+                    this.setState({painting: false, clean : false});
                 }
             }
 
              cleaning(){
                  $("#grid").children().css("background", "white");
-                 this.setState({strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]})
+                 this.setState({strokeCells : [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], clean : true})
+
+
             }
 
         brushStroke(event){
@@ -63,9 +66,9 @@ class Canvas extends React.Component {
                     <button type='button' id='brush' onClick={this.toPainting} disabled={this.state.painting}>Brush</button>
                     <button type='button' id='eraser' onClick={this.toErasing} disabled={!this.state.painting}>Eraser</button>
                     <button type='button' id='clean' onClick={this.cleaning}>Clean</button>
-                    <button type='button' id='drawFractal' onClick={() => {this.setState({endPaint : true})}}>draw</button>
+                    <button type='button' id='drawFractal' onClick={() => {this.setState({clean : false, endPaint : true})}}>draw</button>
                 </div>
-                <Builder  figure={this.state.strokeCells} endPaint={this.state.endPaint}/>
+                <Builder  figure={this.state.strokeCells} endPaint={this.state.endPaint} clean={this.state.clean}/>
             </div>)
                 }
 }

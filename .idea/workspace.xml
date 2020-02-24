@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29132f70-5061-4927-9c88-91e3a61c6989" name="Default Changelist" comment="Added transfer from canvas">
+    <list default="true" id="29132f70-5061-4927-9c88-91e3a61c6989" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Builder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Canvas.js" afterDir="false" />
@@ -162,22 +162,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1427" y="333" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1581884552885" />
-    <state width="1482" height="475" key="GridCell.Tab.0.bottom" timestamp="1581853864332">
+    <state width="2561" height="144" key="GridCell.Tab.0.bottom" timestamp="1582547552408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1482" height="475" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1581853864332" />
-    <state width="1482" height="475" key="GridCell.Tab.0.center" timestamp="1581853864332">
+    <state width="2561" height="144" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
+    <state width="2561" height="144" key="GridCell.Tab.0.center" timestamp="1582547552408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1482" height="475" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1581853864332" />
-    <state width="1482" height="475" key="GridCell.Tab.0.left" timestamp="1581853864332">
+    <state width="2561" height="144" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
+    <state width="2561" height="144" key="GridCell.Tab.0.left" timestamp="1582547552408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1482" height="475" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1581853864332" />
-    <state width="1482" height="475" key="GridCell.Tab.0.right" timestamp="1581853864332">
+    <state width="2561" height="144" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
+    <state width="2561" height="144" key="GridCell.Tab.0.right" timestamp="1582547552408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1482" height="475" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1581853864332" />
+    <state width="2561" height="144" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
     <state width="1482" height="475" key="GridCell.Tab.1.bottom" timestamp="1581853864332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -238,6 +238,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="900" y="222" width="760" height="957" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1582546676008" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1582547276401">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1582547276401" />
     <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1581607633412">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

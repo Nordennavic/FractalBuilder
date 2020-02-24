@@ -24,7 +24,9 @@ class Builder extends React.Component {
         {
             for(let j = 0; j < 7; j++) {
                 if (figureCoord[j + (7*i)] === 1)
-                    this.drawPoint(startPoint, context);
+                    this.drawPoint(startPoint, context, "black");
+                else
+                    this.drawPoint(startPoint, context, "white");
                 startPoint[0]++;
                 if(i === 6 && j === 6)
                     lastPoint = startPoint;
@@ -37,14 +39,27 @@ class Builder extends React.Component {
 
     }
 
-    drawPoint(coordinate, ctx)
+    cleaningCanvas()
     {
-        ctx.fillRect(coordinate[0], coordinate[1], 4,4);
+        let canvas = document.getElementById("Dimension");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "white";
+        ctx.fillRect(0,0, 600, 600);
+    }
+
+    drawPoint(coordinate, ctx, style)
+    {
+        ctx.fillStyle = style;
+        ctx.fillRect(coordinate[0], coordinate[1], 1,1);
     }
 
 
     render() {
         if(this.props.endPaint) {
+            this.fragmentBuild([300, 300], this.props.figure);
+        }
+        if(this.props.clean){
+            this.cleaningCanvas();
         }
         return(
             <canvas width="600px" height="600px" id="Dimension">
