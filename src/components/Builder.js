@@ -1,9 +1,8 @@
 import React from "react";
-import $ from "jquery";
 
 let i = 0;
 let lastPoint = [];
-let fullFractal = [];
+let fullFractal = [600][600];
 let fragment = [];
 let fragmentBuffer = [];
 let primaryFigure = [];
