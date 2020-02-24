@@ -41,6 +41,7 @@ class Canvas extends React.Component {
                 cell.style.background = 'white';
                 this.setState(state => {state.strokeCells[cell.id.toString()] = 0; return state.strokeCells});
             }
+            this.setState({endPaint : false});
         console.log(this.state.strokeCells)
         }
 
@@ -62,7 +63,7 @@ class Canvas extends React.Component {
                     <button type='button' id='brush' onClick={this.toPainting} disabled={this.state.painting}>Brush</button>
                     <button type='button' id='eraser' onClick={this.toErasing} disabled={!this.state.painting}>Eraser</button>
                     <button type='button' id='clean' onClick={this.cleaning}>Clean</button>
-                    <button type='button' id='drawFractal' onClick={() => {this.setState({endPaint : false})}}>draw</button>
+                    <button type='button' id='drawFractal' onClick={() => {this.setState({endPaint : true})}}>draw</button>
                 </div>
                 <Builder  figure={this.state.strokeCells} endPaint={this.state.endPaint}/>
             </div>)
