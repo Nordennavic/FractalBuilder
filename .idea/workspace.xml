@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="WithCanvas" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582548282436</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Full Canvas transplantation has been successful!">
+      <created>1582548592883</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582548592883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,29 +169,30 @@
     <MESSAGE value="Half-added fractal drawing" />
     <MESSAGE value="Added transfer from canvas" />
     <MESSAGE value="Full Canvas transplantation has been successful!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full Canvas transplantation has been successful!" />
+    <MESSAGE value="First step" />
+    <option name="LAST_COMMIT_MESSAGE" value="First step" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1427" y="333" key="CommitChangelistDialog2" timestamp="1582548281736">
+    <state x="1427" y="333" key="CommitChangelistDialog2" timestamp="1582548655523">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1427" y="333" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582548281736" />
-    <state width="2561" height="144" key="GridCell.Tab.0.bottom" timestamp="1582547552408">
+    <state x="1427" y="333" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582548655523" />
+    <state width="2561" height="144" key="GridCell.Tab.0.bottom" timestamp="1582551330002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="144" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
-    <state width="2561" height="144" key="GridCell.Tab.0.center" timestamp="1582547552408">
+    <state width="2561" height="144" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582551330002" />
+    <state width="2561" height="144" key="GridCell.Tab.0.center" timestamp="1582551330002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="144" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
-    <state width="2561" height="144" key="GridCell.Tab.0.left" timestamp="1582547552408">
+    <state width="2561" height="144" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582551330002" />
+    <state width="2561" height="144" key="GridCell.Tab.0.left" timestamp="1582551330001">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="144" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
-    <state width="2561" height="144" key="GridCell.Tab.0.right" timestamp="1582547552408">
+    <state width="2561" height="144" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582551330001" />
+    <state width="2561" height="144" key="GridCell.Tab.0.right" timestamp="1582551330002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="144" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582547552408" />
+    <state width="2561" height="144" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582551330002" />
     <state width="1482" height="475" key="GridCell.Tab.1.bottom" timestamp="1581853864332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -253,9 +261,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="937" y="331" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1581607633412" />
-    <state x="939" y="316" width="672" height="678" key="search.everywhere.popup" timestamp="1581607774794">
+    <state x="939" y="316" width="672" height="678" key="search.everywhere.popup" timestamp="1582549977582">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="939" y="316" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1581607774794" />
+    <state x="939" y="316" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1582549977582" />
   </component>
 </project>

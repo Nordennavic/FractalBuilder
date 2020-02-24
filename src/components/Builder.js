@@ -1,6 +1,6 @@
 import React from "react";
 
-let i = 0;
+let GlobalI = 0;
 let lastPoint = [];
 let fullFractal = [600][600];
 let fragment = [];
@@ -15,7 +15,7 @@ class Builder extends React.Component {
         };
     }
 
-    fragmentBuild(startPoint, figureCoord) {
+    /*fragmentBuild(startPoint, figureCoord) {
         let canvas = document.getElementById("Dimension");
         let context = canvas.getContext("2d");
 
@@ -35,6 +35,57 @@ class Builder extends React.Component {
 
         }
 
+    }*/
+
+    Rotate(matrix){
+        let rotateMatrix = matrix;
+        for(let i = 0; i < matrix.length; i++)
+        {
+            for(let j = 0; j < matrix.length; j++)
+            {
+                rotateMatrix[j][matrix.length - 1 - i] = matrix[matrix.length - 1 - i][j];
+            }
+        }
+        return rotateMatrix;
+    }
+
+    BuildFigure(startPoint, figureCoord){
+        let figure = [1000][1000];
+        for(let i = 0; i < 7; i++)
+        {
+            for(let j = 0; j < 7; j++) {
+                if (figureCoord[j + (7*i)] === 1){
+                    figure[i + 300][j + 300] = 1;
+                    lastPoint = startPoint;
+                } else
+                    figure[i + 300 ][j + 300] = 0;
+                startPoint[0]++;
+            }
+            startPoint[1]++;
+            startPoint[0] -= 7;
+        }
+        this.BuildFract(figure)
+    }
+
+    BuildFract(figure) {
+        let alreadyLastPoint;
+        let rotateFigure = this.Rotate(figure);
+        for(let i = 0; i < rotateFigure.length; i++)
+        {
+            for(let j = 0; j < rotateFigure.length; j++) {
+                if (rotateFigure[j][i] === 1){
+                    figure[lastPoint[0]+1 + i + 300][lastPoint[1]+1 + j + 300] = 1;
+                    alreadyLastPoint = lastPoint;
+                } else
+                    figure[lastPoint[0]+1 + i + 300][lastPoint[1]+1 + j + 300] = 0;
+                lastPoint[0]++;
+            }
+            lastPoint[1]++;
+            lastPoint[0] -= rotateFigure.length;
+        }
+        GlobalI++;
+        if(GlobalI !== 4)
+            this.BuildFract(figure);
 
     }
 
@@ -55,7 +106,7 @@ class Builder extends React.Component {
 
     render() {
         if(this.props.endPaint) {
-            this.fragmentBuild([300, 300], this.props.figure);
+            this.BuildFigure([300, 300], this.props.figure);
         }
         if(this.props.clean){
             this.cleaningCanvas();
